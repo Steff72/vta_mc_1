@@ -27,26 +27,28 @@ Ergebnis: $Z$ ist eine $(N \times O)$-Matrix.
 **Gegeben**:  
 - $dOut$: Gradienten der Kostenfunktion bezüglich der Layer-Ausgabe $Z$
 
-1. **Gradient bezüglich der Gewichte $W$**  
+1. **Gradient bezüglich der Gewichte** $W$:
 
    $$
-   \frac{\partial \mathcal{L}}{\partial W} = \frac{1}{N} \, dOut^\top \cdot X
+   \begin{aligned}
+   \frac{\partial \mathcal{L}}{\partial W} &= \frac{1}{N} dOut^\top \cdot X
+   \end{aligned}
    $$
 
+2. **Gradient bezüglich des Bias** $B$:
 
-2. **Gradient bezüglich des Bias $B$**  
-   
    $$
-   \frac{\partial \mathcal{L}}{\partial B} 
-   = \frac{1}{N} \sum_{n=1}^{N} dOut_n
+   \begin{aligned}
+   \frac{\partial \mathcal{L}}{\partial B} &= \frac{1}{N} \sum_{n=1}^{N} dOut_n
+   \end{aligned}
    $$
 
+3. **Gradient bezüglich der Eingabe** $X$:
 
-3. **Gradient bezüglich der Eingabe $X$**  
-   
    $$
-   \frac{\partial \mathcal{L}}{\partial X} 
-   = dOut \cdot W
+   \begin{aligned}
+   \frac{\partial \mathcal{L}}{\partial X} &= dOut \cdot W
+   \end{aligned}
    $$
 
 
