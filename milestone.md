@@ -67,7 +67,7 @@ $\mathrm{ReLU}(z) = \max(0, z)$
 
 **Ableitung**  
 
-$\mathrm{ReLU}'(z) = \begin{cases} 1 & \text{falls } z > 0, \\ 0 & \text{sonst} \end{cases}$
+$$\mathrm{ReLU}'(z) = \begin{cases} 1 & \text{falls } z > 0, \\ 0 & \text{sonst} \end{cases}$$
 
 
 ---
