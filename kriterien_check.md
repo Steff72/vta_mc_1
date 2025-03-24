@@ -115,4 +115,83 @@ Dieser Kriterien Check bewertet das aktuelle Notebook anhand der Bewertungsvorga
   **Kommentar:** Es wird erklärt, dass Mini-Batch Training den Speicherbedarf reduziert, die Generalisierung verbessert und Rechenressourcen effizienter nutzt.
 
 - **Kriterium 24:** Ausprobieren verschiedener Hyperparameter-Kombinationen  
-  **Status:**
+  **Status:** Erfüllt  
+  **Kommentar:** Umfassende Experimente mit unterschiedlichen Lernraten (0.001, 0.01, 0.1) und Hidden-Dimensionen (16, 32, 64) werden durchgeführt.
+
+- **Kriterium 25:** Überwachung der Entwicklung von Kosten- und Evaluationsfunktionen bei Trainings- und Testdaten  
+  **Status:** Erfüllt  
+  **Kommentar:** Loss- und Accuracy-Werte werden kontinuierlich erhoben und für beide Datensätze ausgewertet.
+
+- **Kriterium 26:** Nachvollziehbare Entscheidung der Hyperparameter  
+  **Status:** Erfüllt  
+  **Kommentar:** Die Resultate der Experimente werden zusammengefasst, sodass die finale Wahl (z. B. Lernrate 0.1, Hidden-Dimension 64) nachvollziehbar ist.
+
+---
+
+## 6. Form und Dokumentation
+
+- **Kriterium 27:** Übersichtliche Strukturierung und klare Leseführung des Notebooks  
+  **Status:** Erfüllt  
+  **Kommentar:** Das Notebook ist logisch in die Aufgaben 1 bis 5 gegliedert und folgt einem nachvollziehbaren Ablauf.
+
+- **Kriterium 28:** Verständliche Kommunikation und kritische Evaluation der Ergebnisse  
+  **Status:** Erfüllt  
+  **Kommentar:** Ergebnisse und Experimente werden klar dargestellt und kommentiert.
+
+- **Kriterium 29:** Vollständige Beschriftung der Grafiken  
+  **Status:** Erfüllt  
+  **Kommentar:** Alle Plots und Diagramme sind mit Titeln, Achsenbeschriftungen und Legenden versehen.
+
+- **Kriterium 30:** Gut strukturierter, verständlicher und angemessen kommentierter Code  
+  **Status:** Erfüllt  
+  **Kommentar:** Der Code ist modular aufgebaut, gut kommentiert und die Funktions- sowie Klassennamen sind aussagekräftig.
+
+- **Kriterium 31:** Zusammenfassung der Ergebnisse am Ende des Notebooks  
+  **Status:** Erfüllt  
+  **Kommentar:** Am Ende werden die Resultate der Hyperparameter-Experimente und der finale Test-Accuracy zusammengefasst.
+
+- **Kriterium 32:** Kurzes, verständliches Lerntagebuch inkl. Reflexion über KI-Nutzung  
+  **Status:** Erfüllt  
+  **Kommentar:** Das separate Lerntagebuch (tagebuch.md) sowie das Dokument zur KI-Nutzung (ki_nutzung.pdf) liefern eine klare Reflexion über den Einsatz von KI-Tools und deren Vor- sowie Nachteile.
+
+- **Kriterium 33:** Beispielchat und Reflexion über KI-Nutzung  
+  **Status:** Erfüllt  
+  **Kommentar:** In der KI-Nutzungsdokumentation wird anhand von Beispielen (etwa die Erstellung von Docstrings und der Strukturierung des Notebooks) erläutert, wie ChatGPT den Entwicklungsprozess unterstützt hat ki_nutzung.pdf](file-service://file-LVH3gZBwHQBdmyAGSyzofu).
+
+---
+
+## 7. Malus-Kriterien
+
+- **Verwendung unerlaubter Pakete:**  
+  **Status:** Erfüllt  
+  **Kommentar:** Es werden nur erlaubte Pakete wie `torchvision`, `numpy`, `matplotlib` und Python Built-ins verwendet.
+
+- **Ausführungszeit:**  
+  **Status:** Erfüllt  
+  **Kommentar:** Das Notebook lässt sich vollständig und fehlerfrei in unter 5 Minuten ausführen.
+
+- **Grammatik und Rechtschreibung:**  
+  **Status:** Erfüllt  
+  **Kommentar:** Der Text ist überwiegend fehlerfrei und gut verständlich formuliert.
+
+- **Fundierte Schlussfolgerungen und inhaltliche Kohärenz:**  
+  **Status:** Erfüllt  
+  **Kommentar:** Die Resultate werden stichhaltig präsentiert und durch die durchgeführten Experimente untermauert.
+
+---
+
+## Gesamteinschätzung
+
+**Stärken:**  
+- Vollständiges und korrektes Laden, Visualisieren und Beschreiben des MNIST-Datensatzes  
+- Saubere Implementierung und Testung des Linear Layers  
+- Übersichtliche Umsetzung eines Single Layer Modells zur binären Klassifikation  
+- Umfassende Experimente mit verschiedenen Hyperparametern im Multi Layer Modell  
+- Klare Strukturierung, ausführliche Kommentierung und aussagekräftige Visualisierungen  
+- Integrierte Reflexion zur Nutzung von KI-Tools, dokumentiert in separaten Dateien (tagebuch.md und ki_nutzung.pdf)
+
+**Verbesserungspotenzial:**  
+- Vertiefte schriftliche Begründungen zur Auswahl der Hyperparameter und zu alternativen Ansätzen  
+- Eine noch konsequentere Nutzung von LaTeX zur Darstellung mathematischer Formeln könnte den wissenschaftlichen Anspruch weiter erhöhen
+
+Insgesamt erfüllt das Notebook "vta_mc_1.ipynb" in der neuesten Version die wesentlichen Bewertungskriterien und dokumentiert zudem den Einsatz von KI-Tools transparent und reflektiert.
